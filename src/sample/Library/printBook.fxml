@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.printDetails">
+   <children>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="586.0" fitWidth="850.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/IMG_8546.JPG" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="850.0" text="Issued Books" textFill="#f2efef">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="button" layoutX="56.0" layoutY="191.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="33.0" prefWidth="117.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Search" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <Button fx:id="libraryDashboard" layoutX="44.0" layoutY="21.0" mnemonicParsing="false" onAction="#onHomeClick" prefHeight="33.0" prefWidth="70.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Back" textFill="#0071ca">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="normalHome" />
+                  <String fx:value="home" />
+               </styleClass>
+            </Button>
+            <TextArea fx:id="allBorrowedBooks" editable="false" layoutX="256.0" layoutY="92.0" prefHeight="479.0" prefWidth="580.0" stylesheets="@../stylesheet.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="search" alignment="CENTER" layoutX="21.0" layoutY="123.0" prefHeight="33.0" prefWidth="208.0" promptText="Student ID" />
+            <Button fx:id="button1" disable="true" layoutX="56.0" layoutY="277.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="33.0" prefWidth="117.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Print" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

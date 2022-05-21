@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manageStaff">
+   <children>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="750.0" fitWidth="850.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/IMG_8546.JPG" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="850.0" text="Manage Staff" textFill="#f2efef">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="staffID" alignment="CENTER" layoutX="190.0" layoutY="372.0" prefHeight="25.0" prefWidth="208.0" promptText="Staff ID" />
+            <TextField fx:id="staffFirstName" alignment="CENTER" layoutX="190.0" layoutY="430.0" prefHeight="25.0" prefWidth="208.0" promptText="FirstName" />
+            <TextField fx:id="staffMiddleName" alignment="CENTER" layoutX="190.0" layoutY="486.0" prefHeight="25.0" prefWidth="208.0" promptText="MiddleName" />
+            <Label layoutX="39.0" layoutY="541.0" prefHeight="26.0" prefWidth="117.0" text="LastName" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="staffLastName" alignment="CENTER" layoutX="190.0" layoutY="542.0" prefHeight="25.0" prefWidth="208.0" promptText="LastName" />
+            <Label layoutX="39.0" layoutY="486.0" prefHeight="26.0" prefWidth="117.0" text="MiddleName" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="430.0" prefHeight="26.0" prefWidth="117.0" text="FirstName" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="372.0" prefHeight="26.0" prefWidth="117.0" text="Staff ID" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="593.0" prefHeight="26.0" prefWidth="117.0" text="Date of Birth" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="469.0" layoutY="232.0" prefHeight="26.0" prefWidth="108.0" text="Appoinment Date" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="469.0" layoutY="532.0" prefHeight="26.0" prefWidth="117.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="469.0" layoutY="593.0" prefHeight="26.0" prefWidth="117.0" text="Grade" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="staffDoB" editable="false" layoutX="188.0" layoutY="594.0" prefHeight="25.0" prefWidth="208.0" promptText="Pick Date" />
+            <DatePicker fx:id="staffDoA" editable="false" layoutX="601.0" layoutY="232.0" prefHeight="25.0" prefWidth="208.0" promptText="Pick Date" />
+            <ComboBox fx:id="staffGender" layoutX="600.0" layoutY="533.0" prefHeight="25.0" prefWidth="208.0" promptText="Gender" />
+            <ComboBox fx:id="staffGrade" layoutX="600.0" layoutY="594.0" prefHeight="25.0" prefWidth="208.0" promptText="Grade" />
+            <TextField fx:id="staffAddress" alignment="CENTER" layoutX="600.0" layoutY="358.0" prefHeight="25.0" prefWidth="208.0" promptText="Address" />
+            <Label layoutX="469.0" layoutY="358.0" prefHeight="26.0" prefWidth="117.0" text="Address" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="staffPhoneNumber2" alignment="CENTER" layoutX="600.0" layoutY="471.0" prefHeight="25.0" prefWidth="208.0" promptText="Contact" />
+            <Label layoutX="469.0" layoutY="470.0" prefHeight="26.0" prefWidth="117.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="staffPhoneNumber1" alignment="CENTER" layoutX="601.0" layoutY="415.0" prefHeight="25.0" prefWidth="208.0" promptText="Contact" />
+            <Label layoutX="469.0" layoutY="414.0" prefHeight="26.0" prefWidth="117.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="reset" layoutX="86.0" layoutY="678.0" mnemonicParsing="false" onAction="#onResetClick" prefHeight="33.0" prefWidth="126.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Reset" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <Button fx:id="update" layoutX="483.0" layoutY="678.0" mnemonicParsing="false" onAction="#onUpdateClick" prefHeight="33.0" prefWidth="117.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Update Details" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="staffEmail" alignment="CENTER" layoutX="600.0" layoutY="299.0" prefHeight="25.0" prefWidth="208.0" promptText="E-Mail" />
+            <Label layoutX="469.0" layoutY="301.0" prefHeight="26.0" prefWidth="117.0" text="E-Mail" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="delete" layoutX="292.0" layoutY="678.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="33.0" prefWidth="126.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Delete" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="search" alignment="CENTER" layoutX="601.0" layoutY="118.0" prefHeight="33.0" prefWidth="208.0" promptText="Enter Staff ID" />
+            <Button fx:id="btnSearch1" layoutX="445.0" layoutY="118.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="33.0" prefWidth="126.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Search" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <Button fx:id="staffDash" layoutX="65.0" layoutY="21.0" mnemonicParsing="false" onAction="#onHomeClick" prefHeight="33.0" prefWidth="70.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Back" textFill="#0071ca">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="normalHome" />
+                  <String fx:value="home" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="imageUrl" editable="false" layoutX="190.0" layoutY="311.0" onMouseClicked="#fileUpload" prefHeight="26.0" prefWidth="208.0" promptText="Browse" />
+            <ImageView fx:id="picture" fitHeight="173.0" fitWidth="200.0" layoutX="194.0" layoutY="118.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/RZSBE3958.JPG" />
+               </image>
+            </ImageView>
+            <Button fx:id="imageUpdate" layoutX="660.0" layoutY="678.0" mnemonicParsing="false" onAction="#updateImage" prefHeight="33.0" prefWidth="117.0" style="-fx-border-color: none; -fx-background-radius: 15;" stylesheets="@../stylesheet.css" text="Update Image" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

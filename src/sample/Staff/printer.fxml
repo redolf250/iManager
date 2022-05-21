@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.printStaff">
+   <children>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="850.0" style="-fx-background-color: #0071ca;" text="Printer Job" textFill="#f2efef">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="StaffTextarea" editable="false" layoutX="267.0" layoutY="89.0" prefHeight="484.0" prefWidth="566.0" />
+            <Button fx:id="print" layoutX="62.0" layoutY="260.0" mnemonicParsing="false" onAction="#printerJob" prefHeight="33.0" prefWidth="144.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Print" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <Button fx:id="NonStaffDashP" layoutX="66.0" layoutY="21.0" mnemonicParsing="false" onAction="#onHomeClick" prefHeight="33.0" prefWidth="70.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Back" textFill="#0071ca">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="normalHome" />
+                  <String fx:value="home" />
+               </styleClass>
+            </Button>
+            <Button fx:id="button" layoutX="62.0" layoutY="156.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="33.0" prefWidth="144.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Search" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myDash1" />
+                  <String fx:value="myDash" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="search" alignment="CENTER" layoutX="30.0" layoutY="89.0" prefHeight="33.0" prefWidth="208.0" promptText="Staff ID" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

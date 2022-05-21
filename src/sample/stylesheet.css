@@ -1,0 +1,32 @@
+.myButton:hover
+{
+   -fx-background-color:#5b3e8c;
+   -fx-background-radius:15px;
+}
+
+.button
+{
+   -fx-background-color:#0071ca;
+   -fx-background-radius:10px;
+}
+
+.normalHome
+{
+ -fx-background-color:white;
+ -fx-text-fill:#0071ca;
+}
+.home:hover
+{
+  -fx-background-color:#5b3e8c;
+  -fx-text-fill:white;
+}
+
+.myDash
+{
+  -fx-background-color:#0071ca;
+}
+
+.myDash1:hover
+{
+  -fx-background-color:#5b3e8c;
+}

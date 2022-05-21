@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--suppress ALL -->
+<AnchorPane fx:id="anchorpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="433.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.massage">
+   <children>
+      <Button fx:id="okay1" layoutX="180.0" layoutY="211.0" mnemonicParsing="false" onAction="#onError" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #0071ca; -fx-background-radius: 15; -fx-border-color: none;" styleClass="dashButton" text="Ok" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="106.0" fitWidth="161.0" layoutX="164.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IconAsset/CIEJ0392.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" alignment="CENTER" layoutX="98.0" layoutY="161.0" prefHeight="33.0" prefWidth="246.0" text="Student ID Already Registered" textFill="#0071ca">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

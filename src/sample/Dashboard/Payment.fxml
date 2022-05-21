@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="924.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="576.0" prefWidth="924.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="924.0" style="-fx-background-color: #0071ca;" text="Payment Management" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="144.0" layoutX="139.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IconAsset/addStudent.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnStudentPayment" layoutX="139.0" layoutY="385.0" mnemonicParsing="false" onAction="#addPayment" prefHeight="33.0" prefWidth="144.0" style="-fx-border-color: none;" stylesheets="@../stylesheet.css" text="Add Student" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myButton" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="144.0" layoutX="397.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IconAsset/pStaff.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnManagePayment" layoutX="397.0" layoutY="385.0" mnemonicParsing="false" onAction="#managePayment" prefHeight="33.0" prefWidth="144.0" style="-fx-border-color: none;" stylesheets="@../stylesheet.css" text="Manage Payment" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myButton" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="144.0" layoutX="654.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IconAsset/printer.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnPrintPayment" layoutX="654.0" layoutY="385.0" mnemonicParsing="false" onAction="#printPayment" prefHeight="33.0" prefWidth="144.0" style="-fx-border-color: none;" stylesheets="@../stylesheet.css" text="Print Details" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="myButton" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="paymentHome" layoutX="48.0" layoutY="21.0" mnemonicParsing="false" onAction="#goHome" prefHeight="33.0" prefWidth="74.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Home" textFill="#0071ca">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="normalHome" />
+                  <String fx:value="home" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

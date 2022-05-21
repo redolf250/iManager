@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addAccount">
+   <children>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="850.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="586.0" fitWidth="850.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/IMG_8539.JPG" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="190.0" layoutY="124.0" prefHeight="419.0" prefWidth="444.0">
+               <children>
+                  <TextField fx:id="signUpUsername" alignment="CENTER" layoutX="90.0" layoutY="152.0" prefHeight="33.0" prefWidth="265.0" promptText="Username" style="-fx-background-radius: 15; -fx-border-style: none;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="signUpPassword" alignment="CENTER" layoutX="90.0" layoutY="235.0" prefHeight="33.0" prefWidth="265.0" promptText="Password" style="-fx-background-radius: 15; -fx-border-style: none;">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="signUpReset" layoutX="243.0" layoutY="322.0" mnemonicParsing="false" onAction="#onResetClick" prefHeight="33.0" prefWidth="112.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Reset" textFill="#0071ca">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="normalHome" />
+                        <String fx:value="home" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="addAccountSignUp" layoutX="90.0" layoutY="322.0" mnemonicParsing="false" onAction="#onRegisterClick" prefHeight="33.0" prefWidth="112.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Sign Up" textFill="#0071ca">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="normalHome" />
+                        <String fx:value="home" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="856.0" text="Add User" textFill="#f2efef">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="manageAccountDash" layoutX="71.0" layoutY="21.0" mnemonicParsing="false" onAction="#onHomeClick" prefHeight="33.0" prefWidth="70.0" style="-fx-background-radius: 15; -fx-border-color: none;" stylesheets="@../stylesheet.css" text="Back" textFill="#0071ca">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="normalHome" />
+                  <String fx:value="button" />
+                  <String fx:value="home" />
+               </styleClass>
+            </Button>
+            <Label alignment="CENTER" layoutY="527.0" prefHeight="33.0" prefWidth="850.0" text="Powered By iBuilder" textFill="#fffdfd">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
